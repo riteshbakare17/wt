@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="orders.xsl"?>
+<!DOCTYPE orders SYSTEM "orders.dtd">
+
+
+<orders>
+<order>
+<OrderID>O1001</OrderID>
+<CustomerName>John Doe</CustomerName>
+<Product>Wireless Mouse</Product>
+<Quantity>2</Quantity>
+<OrderDate>2025-11-10</OrderDate>
+</order>
+
+
+<order>
+<OrderID>O1002</OrderID>
+<CustomerName>Jane Smith</CustomerName>
+<Product>Cotton T-Shirt</Product>
+<Quantity>5</Quantity>
+<OrderDate>2025-11-12</OrderDate>
+</order>
+
+
+<order>
+<OrderID>O1003</OrderID>
+<CustomerName>Michael Brown</CustomerName>
+<Product>Ceramic Mug</Product>
+<Quantity>3</Quantity>
+<OrderDate>2025-11-13</OrderDate>
+</order>
+</orders>

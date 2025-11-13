@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+
+<xs:element name="orders">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="order" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="OrderID" type="xs:string"/>
+<xs:element name="CustomerName" type="xs:string"/>
+<xs:element name="Product" type="xs:string"/>
+<xs:element name="Quantity" type="xs:integer"/>
+<xs:element name="OrderDate" type="xs:date"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+
+
+<!-- Ensure unique OrderID -->
+<xs:unique name="uniqueOrderID">
+<xs:selector xpath="order"/>
+<xs:field xpath="OrderID"/>
+</xs:unique>
+</xs:complexType>
+</xs:element>
+
+
+</xs:schema>
