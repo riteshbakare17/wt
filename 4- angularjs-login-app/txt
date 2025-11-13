@@ -1,0 +1,5 @@
+
+Design an application using Angular JS. e.g., Design registration (first name, last name, username, password) and login page using Angular JS. 
+
+cd "C:\Users\rites\OneDrive\Desktop\4- angularjs-login-app"
+python -m http.server 8000

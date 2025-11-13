@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<!DOCTYPE college SYSTEM "students.dtd">
+<college>
+    
+    <student id="s001">
+        <rollno>CS2023001</rollno>
+        <name>John Smith</name>
+        <branch>Computer Science</branch>
+        <year>2</year>
+        <gpa>3.75</gpa>
+    </student>
+    
+    <student id="s002">
+        <rollno>EE2023002</rollno>
+        <name>Emma Johnson</name>
+        <branch>Electrical Engineering</branch>
+        <year>3</year>
+        <gpa>3.92</gpa>
+    </student>
+    
+    <student id="s003">
+        <rollno>ME2023003</rollno>
+        <name>Michael Brown</name>
+        <branch>Mechanical Engineering</branch>
+        <year>1</year>
+        <gpa>3.45</gpa>
+    </student>
+    
+    <student id="s004">
+        <rollno>IT2023004</rollno>
+        <name>Sarah Davis</name>
+        <branch>Information Technology</branch>
+        <year>4</year>
+        <gpa>3.88</gpa>
+    </student>
+    
+    <student id="s005">
+        <rollno>CE2023005</rollno>
+        <name>David Wilson</name>
+        <branch>Civil Engineering</branch>
+        <year>2</year>
+        <gpa>3.60</gpa>
+    </student>
+    
+</college>

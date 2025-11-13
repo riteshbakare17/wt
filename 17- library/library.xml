@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="library.xsl"?>
+
+<library xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="library.xsd">
+
+    <book>
+        <BookID>B001</BookID>
+        <Title>Introduction to Algorithms</Title>
+        <Author>Thomas H. Cormen</Author>
+        <Publisher>MIT Press</Publisher>
+        <Year>2009</Year>
+    </book>
+
+    <book>
+        <BookID>B002</BookID>
+        <Title>Clean Code</Title>
+        <Author>Robert C. Martin</Author>
+        <Publisher>Prentice Hall</Publisher>
+        <Year>2008</Year>
+    </book>
+
+    <book>
+        <BookID>B003</BookID>
+        <Title>Database System Concepts</Title>
+        <Author>Abraham Silberschatz</Author>
+        <Publisher>McGraw-Hill</Publisher>
+        <Year>2010</Year>
+    </book>
+
+    <book>
+        <BookID>B004</BookID>
+        <Title>Operating System Concepts</Title>
+        <Author>Abraham Silberschatz</Author>
+        <Publisher>Wiley</Publisher>
+        <Year>2018</Year>
+    </book>
+
+    <book>
+        <BookID>B005</BookID>
+        <Title>Computer Networks</Title>
+        <Author>Andrew S. Tanenbaum</Author>
+        <Publisher>Pearson</Publisher>
+        <Year>2011</Year>
+    </book>
+
+    <book>
+        <BookID>B006</BookID>
+        <Title>Design Patterns</Title>
+        <Author>Erich Gamma</Author>
+        <Publisher>Addison-Wesley</Publisher>
+        <Year>1994</Year>
+    </book>
+
+    <book>
+        <BookID>B007</BookID>
+        <Title>Java: The Complete Reference</Title>
+        <Author>Herbert Schildt</Author>
+        <Publisher>McGraw-Hill</Publisher>
+        <Year>2019</Year>
+    </book>
+
+</library>

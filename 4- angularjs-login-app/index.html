@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="userApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Registration & Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="userController">
+
+    <div class="container">
+
+        <!-- Toggle between login and registration -->
+        <h1>{{showLogin ? "Login Page" : "Registration Page"}}</h1>
+        <button ng-click="toggleView()">
+            {{showLogin ? "Go to Registration" : "Go to Login"}}
+        </button>
+
+        <!-- Registration Form -->
+        <div ng-show="!showLogin" class="form-box">
+            <h2>Register</h2>
+            <form ng-submit="register()">
+                <label>First Name:</label>
+                <input type="text" ng-model="newUser.firstName" required>
+
+                <label>Last Name:</label>
+                <input type="text" ng-model="newUser.lastName" required>
+
+                <label>Username:</label>
+                <input type="text" ng-model="newUser.username" required>
+
+                <label>Password:</label>
+                <input type="password" ng-model="newUser.password" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <p class="message">{{registerMessage}}</p>
+        </div>
+
+        <!-- Login Form -->
+        <div ng-show="showLogin" class="form-box">
+            <h2>Login</h2>
+            <form ng-submit="login()">
+                <label>Username:</label>
+                <input type="text" ng-model="loginUser.username" required>
+
+                <label>Password:</label>
+                <input type="password" ng-model="loginUser.password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p class="message">{{loginMessage}}</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

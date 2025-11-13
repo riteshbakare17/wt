@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="college">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="student" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="rollno" type="xs:string"/>
+                        <xs:element name="name" type="xs:string"/>
+                        <xs:element name="branch" type="branchType"/>
+                        <xs:element name="year" type="yearType"/>
+                        <xs:element name="gpa" type="gpaType"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="branchType">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Computer Science"/>
+        <xs:enumeration value="Electrical Engineering"/>
+        <xs:enumeration value="Mechanical Engineering"/>
+        <xs:enumeration value="Civil Engineering"/>
+        <xs:enumeration value="Information Technology"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="yearType">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="4"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="gpaType">
+    <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="0.0"/>
+        <xs:maxInclusive value="4.0"/>
+        <xs:fractionDigits value="2"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

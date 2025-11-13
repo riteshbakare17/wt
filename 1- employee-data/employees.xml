@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="employees.xsd">
+    <employee id="E001">
+        <name>Tejaswi</name>
+        <designation>Software Engineer</designation>
+        <department>IT</department>
+        <email>tejaswimangave@gmail.com</email>
+        <salary>50000</salary>
+    </employee>
+    <employee id="E002">
+        <name>Pallavi</name>
+        <designation>Accountant</designation>
+        <department>Finance</department>
+        <email>pallavi.g@gmail.com</email>
+        <salary>40000</salary>
+    </employee>
+    <employee id="E003">
+        <name>Amit</name>
+        <designation>HR Manager</designation>
+        <department>HR</department>
+        <email>amit.a@rediffmail.com</email>
+        <salary>45000</salary>
+    </employee>
+</employees>

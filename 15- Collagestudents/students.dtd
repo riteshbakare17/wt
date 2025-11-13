@@ -1,0 +1,9 @@
+<!ELEMENT college (student+)>
+<!ELEMENT student (rollno, name, branch, year, gpa)>
+<!ELEMENT rollno (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT branch (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT gpa (#PCDATA)>
+
+<!ATTLIST student id ID #REQUIRED>

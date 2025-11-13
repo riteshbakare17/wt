@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <category>Programming</category>
+        <availability>Available</availability>
+    </book>
+    <book>
+        <title>Effective Java</title>
+        <author>Joshua Bloch</author>
+        <category>Programming</category>
+        <availability>Issued</availability>
+    </book>
+    <book>
+        <title>The Alchemist</title>
+        <author>Paulo Coelho</author>
+        <category>Fiction</category>
+        <availability>Available</availability>
+    </book>
+    <book>
+        <title>Wings of Fire</title>
+        <author>A.P.J. Abdul Kalam</author>
+        <category>Biography</category>
+        <availability>Available</availability>
+    </book>
+</library>

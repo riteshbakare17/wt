@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="products.xsl"?>
+<!DOCTYPE products SYSTEM "products.dtd">
+
+
+<products>
+<product>
+<ProductID>P1001</ProductID>
+<Name>Wireless Mouse</Name>
+<Category>Electronics</Category>
+<Price>499.99</Price>
+<Quantity>25</Quantity>
+</product>
+
+
+<product>
+<ProductID>P1002</ProductID>
+<Name>Cotton T-Shirt</Name>
+<Category>Apparel</Category>
+<Price>299.00</Price>
+<Quantity>100</Quantity>
+</product>
+
+
+<product>
+<ProductID>P1003</ProductID>
+<Name>Ceramic Mug</Name>
+<Category>Home &amp; Kitchen</Category>
+<Price>199.50</Price>
+<Quantity>40</Quantity>
+</product>
+</products>

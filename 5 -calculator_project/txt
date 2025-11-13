@@ -1,0 +1,2 @@
+cd "c:\Users\rites\OneDrive\Desktop\5 -calculator_project"
+python manage.py runserver

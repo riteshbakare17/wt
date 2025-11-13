@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f2f2f2;
+            margin-top: 100px;
+        }
+        form {
+            display: inline-block;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        input[type=number], select {
+            padding: 8px;
+            margin: 10px;
+            width: 200px;
+        }
+        input[type=submit] {
+            padding: 8px 16px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="number" name="num1" step="any" placeholder="Enter first number" required><br>
+        <input type="number" name="num2" step="any" placeholder="Enter second number" required><br>
+
+        <select name="operation">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (×)</option>
+            <option value="divide">Division (÷)</option>
+        </select><br>
+
+        <input type="submit" value="Calculate">
+    </form>
+
+    {% if result is not None %}
+    <div class="result">
+        <strong>Result: {{ result }}</strong>
+    </div>
+    {% endif %}
+</body>
+</html>
